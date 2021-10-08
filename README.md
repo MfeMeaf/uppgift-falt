@@ -1,4 +1,9 @@
-# uppgift-falt
+# uppgift-fält Felix L
+
+Javascript
+
+
+|||||
 
 Documentation "Vad som används och varför"
 
@@ -6,6 +11,8 @@ Bootstrap: För att det gör livet enklare.
 
 "Bootstrap användes endast för knappens utseende"
 
+
+"Visste lite från innan hur man kunde göra detta men för hela denna kod av innehållet hittade jag av en annan person"
 const emailRegexp = new RegExp(
     /^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i
   )
@@ -18,4 +25,15 @@ if(emailRegexp.test(email) == "true eller false"{
   
 }
 
-med detta kan man testa om en email är rätt och skicka en viadre till en hemsida eller skriva en text som säger att email formatet är fel.
+Detta använder jag som en sista koll innan jag skickar vidare använadren till andra sidan
+
+Eftersom att tree funktioner efterfrågades delade jag upp validerings processen till tre olika funktioner : Validering av användarnamn, Validering samt jämnförrelse av lösenord
+och validering av email
+
+
+||||
+
+HTML Validering 
+||||
+...
+||||
