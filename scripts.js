@@ -18,15 +18,17 @@ function formVal(){
     }
     if(user.length > 3){
         document.getElementById("Fel").innerHTML = ""
-        if(password2 != password || password < 5){ 
+        if(password2 != password || password.lenght < 5){
             if(password2 != password){
-                document.getElementById("Fel").innerHTML = "Lösenord är inte samma / är inte långt nog"
+                document.getElementById("Fel").innerHTML = "Lösenord är inte samma"
             }
-            //  Fungerar ej
-            //else if(password < 5){
-            //    document.getElementById("Fel").innerHTML = "Lösenord är för kort"
-            //}
+            else if(password < 5){
+                document.getElementById("Fel").innerHTML = "Lösenord är för kort"
+            }
+
         }
+        
+        
         // jämnför lösenord samt om email följer standarden från emailRegexp på rad 7-9
          if(password2 == password && password.length > 6){
             if(emailRegexp.test(email) == true){
@@ -37,6 +39,6 @@ function formVal(){
                 document.getElementById("Fel").innerHTML = "Email formatet är fel"
                 document.getElementById("mail").style.textDecoration = "underline red"
             }
-        }  
-    } 
+         }
+    }
 }
