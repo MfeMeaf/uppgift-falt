@@ -30,6 +30,7 @@ Detta använder jag som en sista koll innan jag skickar vidare använadren till 
 Eftersom att tree funktioner efterfrågades delade jag upp validerings processen till tre olika funktioner : Validering av användarnamn, Validering samt jämnförrelse av lösenord
 och validering av email
 
+Dessa är nämnda validering 1-3
 
 ||||
 
