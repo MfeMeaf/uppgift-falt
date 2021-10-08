@@ -48,5 +48,5 @@ Dessa är nämnda validering 1-3
 
 HTML Validering 
 ||||
-...
+Kunde inte komma på en relativt bra lösning som skulle fungerat
 ||||
