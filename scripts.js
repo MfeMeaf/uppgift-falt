@@ -2,7 +2,7 @@
 var btn = document.getElementById("knapp");
 
 // Sätter variablen btn till att lyssna efter ett tryck sen köra funktionen formVal
-btn.addEventListener("click", formVal);
+btn.addEventListener("click", validering1);
 
 // kod som används för att avkolla om en string / text har följade i sig i denna ordning
 const emailRegexp = new RegExp(
@@ -10,7 +10,7 @@ const emailRegexp = new RegExp(
 );
 
 // Function för att hämta det som finns i de olika input fieldsen samt för att avkolla så att allt är rätt
-function formVal() {
+function validering1() {
     // Skapar en konstant när kanppen trycks
     const user = document.getElementById("fname").value;
 
@@ -23,12 +23,12 @@ function formVal() {
     if (user.length > 3) {
         // Sätter texten till att vara tom
         document.getElementById("Fel").innerHTML = "";
-        formVal2();
+        validering2();
     }
 }
 
 // Function för att validera lösenord
-function formVal2() {
+function validering2() {
     // Konstanter för bägge lösenorden "Sätts varje gång formVal2 kallas och körs"
     const password = document.getElementById("psw").value;
     const password2 = document.getElementById("psw2").value;
@@ -52,12 +52,12 @@ function formVal2() {
 
     // Om lösenord är samma och längre än 5 "om den är så fortsätter den viade"
     if (password2 == password && password.length > 5) {
-        formVal3();
+        validering3();
     }
 }
 
 //Function för att validera email
-function formVal3() {
+function validering3() {
     // Konstant för email "Som formVal2 sätts de varje gång formVal3 kallas och körs"
     const email = document.getElementById("mail").value;
     // Om email input följer standarden skickar den en vidare till sida2
