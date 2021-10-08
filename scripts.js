@@ -3,10 +3,12 @@ var btn = document.getElementById("knapp");
 
 // Sätter variablen btn till att lyssna efter ett tryck sen köra funktionen formVal
 btn.addEventListener("click", formVal);
+
 // kod som avkollar om en string / text har följade i sig i denna ordning
 const emailRegexp = new RegExp(
     /^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i
   );
+
 // Function för att hämta det som finns i de olika input fieldsen samt för att avkolla så att allt är rätt
 function formVal(){
     // Skapar konstanter varje gång man trycker på knappen, dessa konstanter innehåller namn, lösenord och mail
@@ -14,11 +16,13 @@ function formVal(){
     const password = document.getElementById("psw").value;
     const password2 = document.getElementById("psw2").value;
     const email = document.getElementById("mail").value;
+    
     // Kollar om namnet är längre än 3 bokstäver långt och om det inte är matar den ut "Användarnamn är för kort"
     if(user.length < 3){
         // Ändrar en paragraph till att innehålla fel texten.
         document.getElementById("Fel").innerHTML = "Användarnamn är för kort";
     }
+
     if(user.length > 3){
         // Sätter texten till att vara tom
         document.getElementById("Fel").innerHTML = "";
